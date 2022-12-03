@@ -33,7 +33,13 @@ functions:
       - httpApi:
           path: /kaam
           method: get
-          
+  kaamKhatamKaro:
+    handler: src/kaamKhatamKaro.handler
+    events:
+      - httpApi:
+          path: /kaam/{id}
+          method: put
+
 resources:
   Resources:
     KaamKaro:
