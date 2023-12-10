@@ -39,6 +39,13 @@ functions:
       - httpApi:
           path: /kaam/{id}
           method: put
+          
+  kaamHatao:
+    handler: src/kaamHatao.handler
+    events:
+      - httpApi:
+          path: /kaam/{id}
+          method: post
 
 resources:
   Resources:
